@@ -1,0 +1,14 @@
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+title: "ThaoNguyen"
+url: "https://thaonbt.github.io"
+
+author:
+  name: "ThaoNguyen"
+  bio: "Full-stack dev | Fintech & Crypto enthusiast"
