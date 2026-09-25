@@ -31,6 +31,7 @@ export default {
     socialLinks: "Social Links",
     featured: "Featured",
     recentPosts: "Recent Posts",
+    noPosts: "No posts yet — check back soon.",
     allPosts: "All Posts",
   },
   footer: {
@@ -43,9 +44,11 @@ export default {
 
     tagsTitle: "Tags",
     tagsDesc: "All the tags used in posts.",
+    noTags: "No tags yet.",
 
     postsTitle: "Posts",
     postsDesc: "All the articles I've posted.",
+    noPosts: "No posts yet — check back soon.",
 
     archivesTitle: "Archives",
     archivesDesc: "All the articles I've archived.",

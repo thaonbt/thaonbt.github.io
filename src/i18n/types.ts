@@ -29,6 +29,7 @@ export interface UIStrings {
     socialLinks: string;
     featured: string;
     recentPosts: string;
+    noPosts: string;
     allPosts: string;
   };
   footer: {
@@ -41,9 +42,11 @@ export interface UIStrings {
 
     tagsTitle: string;
     tagsDesc: string;
+    noTags: string;
 
     postsTitle: string;
     postsDesc: string;
+    noPosts: string;
 
     archivesTitle: string;
     archivesDesc: string;
