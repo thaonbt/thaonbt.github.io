@@ -21,7 +21,7 @@ import config from "./astro-paper.config";
 
 export default defineConfig({
   site: config.site.url,
-  base: process.env.NODE_ENV === "production" ? "/web-template-astro" : "/",
+  base: process.env.NODE_ENV === "production" ? "" : "/",
   integrations: [
     mdx(),
     sitemap({

@@ -2,7 +2,7 @@
 
 Personal Astro blog/knowledge-base template based on [AstroPaper](https://github.com/satnaing/astro-paper) by Sat Naing (MIT).
 
-Live demo (GitHub Pages): [https://thaonbt.github.io/web-template-astro/](https://thaonbt.github.io/web-template-astro/)
+Live demo (GitHub Pages): [https://thaonbt.github.io/](https://thaonbt.github.io/)
 
 The demo on GitHub Pages is only a preview. Production sites built from this template are meant to be deployed on Cloudflare Pages.
 
