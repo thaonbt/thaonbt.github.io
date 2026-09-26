@@ -2,7 +2,7 @@
 
 Personal Astro blog/knowledge-base template based on [AstroPaper](https://github.com/satnaing/astro-paper) by Sat Naing (MIT).
 
-Live demo (GitHub Pages): [https://thaonbt.github.io/](https://thaonbt.github.io/)
+Live demo (GitHub Pages): [https://thaonbt.github.io/web-template-astro/](https://thaonbt.github.io/web-template-astro/)
 
 The demo on GitHub Pages is only a preview. Production sites built from this template are meant to be deployed on Cloudflare Pages.
 
@@ -26,17 +26,20 @@ The demo on GitHub Pages is only a preview. Production sites built from this tem
    pnpm install
    ```
 3. Edit `astro-paper.config.ts`: `site.url`, `site.title`, `site.description`, `site.author` and social links.
-4. Update `base` in `astro.config.ts` to the new repo name (see the next section).
+4. Update `base` in `astro.config.ts` to a fixed value matching the new repo name, e.g. `base: '/kb-thaonbt-blog'`. Do not make it conditional on `NODE_ENV` — see the `site` and `base` table below for which value to use.
 5. Replace the sample posts in `src/content/posts/` and the About page in `src/content/pages/about.md`.
 
 ## `site` and `base`
 
 GitHub Pages serves a project repo at `https://<username>.github.io/<repo>/`, so the site root is `/<repo>` instead of `/`.
 
-| Target                            | `site.url`                   | `base`         |
-| ----------------------------------- | ---------------------------------- | -------------------- |
-| GitHub Pages (project repo)       | `https://thaonbt.github.io/` | `/` |
-| Cloudflare Pages or custom domain | your final URL                   | remove it          |
+| Target                             | `site.url`                    | `base`          |
+| ----------------------------------- | ------------------------------ | ---------------- |
+| GitHub Pages (project repo)         | `https://thaonbt.github.io/`   | `/<repo-name>`   |
+| GitHub Pages (user/root repo, e.g. `thaonbt.github.io` itself) | `https://thaonbt.github.io/` | `/`   |
+| Cloudflare Pages or custom domain   | your final URL                 | remove it         |
+
+`base` must be a **fixed string**, not conditional on `NODE_ENV` or any environment variable. Its correct value only depends on where the repo is hosted — that never changes between dev and production, so a fixed value keeps dev, build and deploy all consistent and avoids relying on Astro's undocumented (and deprecated) fallback of inferring `base` from `site`'s pathname when `base` is left empty.
 
 When `base` is set, every internal link must include the prefix. After changing either value, always run a production build and click through the site (see below).
 
@@ -45,7 +48,7 @@ When `base` is set, every internal link must include the prefix. After changing 
 | Command            | Action                                                           |
 | -------------------- | ------------------------------------------------------------------ |
 | `pnpm install` | Install dependencies                                             |
-| `pnpm dev`     | Dev server at`http://localhost:4321//`                 |
+| `pnpm dev` | Dev server at `http://localhost:4321/<repo-name>/` |
 | `pnpm build`   | Type-check, build to`./dist/`and generate the Pagefind index |
 | `pnpm preview` | Serve the production build locally                               |
 
@@ -73,4 +76,3 @@ Search only works after `pnpm build`. In dev mode the search index may be empty.
 Based on [AstroPaper](https://github.com/satnaing/astro-paper) by [Sat Naing](https://satnaing.dev/).
 
 Released under the [MIT License](https://claude.ai/chat/LICENSE). The original copyright notice is preserved as required.
-
