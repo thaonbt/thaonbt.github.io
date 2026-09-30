@@ -1,6 +1,6 @@
 ---
 title: "Setup nhiều GitHub account trên một máy: SSH, Git identity và quy ước đặt tên repo"
-description: "Cách tách biệt nhiều GitHub account trên cùng một máy macOS bằng SSH host alias và includeIf, kèm quy ước đặt tên repo và cấu trúc thư mục local."
+description: "Cách tách biệt nhiều GitHub account trên cùng một máy macOS bằng SSH host alias và includeIf, kèm quy ước đặt tên repo và cấu trúc thư mục local"
 pubDatetime: 2026-09-30T09:08:38+07:00
 tags:
   - github
