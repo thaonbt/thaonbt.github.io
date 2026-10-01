@@ -7,7 +7,7 @@ tags:
   - markdown
   - latex
   - mermaid
-featured: false
+featured: true
 draft: false
 ---
 

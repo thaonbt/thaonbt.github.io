@@ -7,7 +7,7 @@ tags:
   - git
   - ssh
   - security
-featured: false
+featured: true
 draft: false
 ---
 

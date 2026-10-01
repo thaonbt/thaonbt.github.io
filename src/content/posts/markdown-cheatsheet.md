@@ -5,7 +5,7 @@ pubDatetime: 2026-10-01T09:00:00+07:00
 tags:
   - cheatsheet
   - markdown
-featured: false
+featured: true
 draft: false
 ---
 

@@ -6,7 +6,7 @@ tags:
   - github
   - git
   - naming-convention
-featured: false
+featured: true
 draft: false
 ---
 
