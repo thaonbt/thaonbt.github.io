@@ -194,6 +194,17 @@ flowchart TD
 ```
 ````
 
+Kết quả:
+
+```mermaid
+flowchart TD
+    A[Bắt đầu] --> B{Điều kiện?}
+    B -->|Đúng| C[Xử lý 1]
+    B -->|Sai| D[Xử lý 2]
+    C --> E[Kết thúc]
+    D --> E
+```
+
 ### 3.1. Flowchart
 
 | Thành phần | Cú pháp |
@@ -220,6 +231,16 @@ sequenceDiagram
 ````
 
 - `->>` là mũi tên liền, `-->>` là mũi tên nét đứt (thường dùng cho response).
+
+Kết quả:
+
+```mermaid
+sequenceDiagram
+    participant U as Người dùng
+    participant S as Server
+    U->>S: Gửi request
+    S-->>U: Trả response
+```
 
 ### 3.3. Các loại sơ đồ khác
 
