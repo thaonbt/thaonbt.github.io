@@ -216,7 +216,7 @@ importers:
         version: 0.26.0
       sharp:
         specifier: ^0.35.2
-        version: 0.35.2
+        version: 0.35.4(@types/node@24.12.2)
       slugify:
         specifier: ^1.6.9
         version: 1.6.9
@@ -800,22 +800,10 @@ packages:
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
     engines: {node: '>=18'}
 
-  '@img/sharp-darwin-arm64@0.35.2':
-    resolution: {integrity: sha512-eEieHsMksAW4IiO5NzauESRl2D2qz3J/kwUxUrSfV06A93eEaRfMpHXyUb1mAqrR7i8U9A0GRqE9pjn6u1Jjpg==}
-    engines: {node: '>=20.9.0'}
-    cpu: [arm64]
-    os: [darwin]
-
   '@img/sharp-darwin-arm64@0.35.4':
     resolution: {integrity: sha512-Uhfl4V4lhP2nbUVF9+hyH1+luj86f1gUFeo8ALYxFoULoU+G87D43BfeMP8XHsk9boxAnCY/bf2EHwhA7MuGsA==}
     engines: {node: '>=20.9.0'}
     cpu: [arm64]
-    os: [darwin]
-
-  '@img/sharp-darwin-x64@0.35.2':
-    resolution: {integrity: sha512-BaktuGPCeHJMARpodR8jK4uKiZrPAy9WrfQW0sdI37clracq8Bp01AYS3SZgi5FS/y5twa9t4+LIuuxQjqRrWw==}
-    engines: {node: '>=20.9.0'}
-    cpu: [x64]
     os: [darwin]
 
   '@img/sharp-darwin-x64@0.35.4':
@@ -824,29 +812,14 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@img/sharp-freebsd-wasm32@0.35.2':
-    resolution: {integrity: sha512-YoAxdnd8hPUkvLHd3bWY+YA8nw3xM/RyRopYucNsWHVSan8NLVM3X2volsfoRDcXdUJPg6tXahSd7HXPK7lRnw==}
-    engines: {node: '>=20.9.0'}
-    os: [freebsd]
-
   '@img/sharp-freebsd-wasm32@0.35.4':
     resolution: {integrity: sha512-lIsKw/BU+kjB4eZjxrYrZmwOJYi3Ajrv66iAlBmUPyKc3HpnloevB1g3wxGD9P/5BbQ1brBGl65VRRrCvQDEqA==}
     engines: {node: '>=20.9.0'}
     os: [freebsd]
 
-  '@img/sharp-libvips-darwin-arm64@1.3.1':
-    resolution: {integrity: sha512-4V/M3roRMTYjiwZY9IOVQOE8OyeCxFAkYmyZDrZl51uOKjibm3oeEJ4WAmLxutAfzFbC9jqUiPs2gbnGflH+7g==}
-    cpu: [arm64]
-    os: [darwin]
-
   '@img/sharp-libvips-darwin-arm64@1.3.3':
     resolution: {integrity: sha512-suTBPTDGrI9WodccaDdwZItTSaBYASlBk1NSfElSHrUfzu3szG6lvIF58+WiFvnfzuK8ZBFS5zE00PxqxnRiPg==}
     cpu: [arm64]
-    os: [darwin]
-
-  '@img/sharp-libvips-darwin-x64@1.3.1':
-    resolution: {integrity: sha512-c0/DxItpJv2+dGhgycJBBgotdqruGYDvA79drdh0MD1dFpy7JzJ/PlXwi1H4rFf0eTy8tgbI91aHDnZIceY3jQ==}
-    cpu: [x64]
     os: [darwin]
 
   '@img/sharp-libvips-darwin-x64@1.3.3':
@@ -854,21 +827,9 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@img/sharp-libvips-linux-arm64@1.3.1':
-    resolution: {integrity: sha512-JznefmcK9j1JKPz8AkQDh89kjojubyfOasWBPKfzMIhPwsgDy9evpE/naJTXXXmghS1iFwR8u/kTwh/I2/+GCw==}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-libvips-linux-arm64@1.3.3':
     resolution: {integrity: sha512-0DaL0A6Xu6sQSQFwe4iVCrKWU2cCTItnRsYsCdxAMm9NF6twAA9BKnoqy4hqz4+azQ0JHuA26qiUKsf1XJ/v5A==}
     cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-libvips-linux-arm@1.3.1':
-    resolution: {integrity: sha512-aGGy9aWzXgHBG7HNyQPWorZthlp7+x6fDRoPAQbGO3ThcttuTyKIx3NuSHb6zb4gBNq6/yNn9f1cy9nFKS/Vmg==}
-    cpu: [arm]
     os: [linux]
     libc: [glibc]
 
@@ -878,21 +839,9 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-libvips-linux-ppc64@1.3.1':
-    resolution: {integrity: sha512-1EkwGNCZk6iWNCMWqrvdJ+r1j0PT1zIz60CNPhYnJlK/zyeWqlsPZIe+ocBVqPF8k/Ssee/NCk+tE9Ryrko6ng==}
-    cpu: [ppc64]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-libvips-linux-ppc64@1.3.3':
     resolution: {integrity: sha512-cdn1OvUBwsXhbC0zSzJnNzf5MZ/mTrobawDvNXBTxe8VtqKAm0sRuEY2Evzovb/w9JMk4TvRxqt1mekSuJz64w==}
     cpu: [ppc64]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-libvips-linux-riscv64@1.3.1':
-    resolution: {integrity: sha512-Ilays+w2bXdnxzxtQdmXR62u8o8GYa3eL4+Gr+1KiE4xperMZUslRaVPJwwPkzlHEjGfXAfRVAa/7CYCtSqsBw==}
-    cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
@@ -902,21 +851,9 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-libvips-linux-s390x@1.3.1':
-    resolution: {integrity: sha512-VfBwVHQTbRoj4XlpA/KLZ7ltgMpz+4WSejFzQ+GnoImjo1PtEJ59QB2qR1xQEeRPYIkNrPIm2L4cICMvz4C2ew==}
-    cpu: [s390x]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-libvips-linux-s390x@1.3.3':
     resolution: {integrity: sha512-neWLh+3yCNThxnfy3c4BbVBeGgt9aftno+XbT56iK28RgeDs3UOFWviLWlUu0bArYVYJaFDK+RRohbicUNCm8Q==}
     cpu: [s390x]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-libvips-linux-x64@1.3.1':
-    resolution: {integrity: sha512-+c8ukgwU62DS54nCAjw7keOfHUkmr0B5QHEdcOqRnodF/MNXJbVI8Eopoj4B/0H8Asr65I+A4Amrn7a85/md6A==}
-    cpu: [x64]
     os: [linux]
     libc: [glibc]
 
@@ -926,21 +863,9 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-libvips-linuxmusl-arm64@1.3.1':
-    resolution: {integrity: sha512-qlKb/pwbkAi1WMsJrYHk7CuDrd12s27U2QnRhFYUoJNrRCmkosMTttuRFat/DDB3IlDm5qE1TJgZ4JDnHX8Ldw==}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
   '@img/sharp-libvips-linuxmusl-arm64@1.3.3':
     resolution: {integrity: sha512-Y9kQaLMuNoB0bPYOOdcZMaseNrFpPodIWWMrx+CZyydf2xn68j9WYc6sWWRrDwNkzCQjKYfc68L7jKjGlHMibw==}
     cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
-  '@img/sharp-libvips-linuxmusl-x64@1.3.1':
-    resolution: {integrity: sha512-yO21HwoUVLN8Qa+/SBjQLMYwBWAVJjeGPNe+hc0OUeMeifEtJqu5a1c4HayE1nNpDih9y3/KkoltfkDodmKAlg==}
-    cpu: [x64]
     os: [linux]
     libc: [musl]
 
@@ -950,24 +875,10 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@img/sharp-linux-arm64@0.35.2':
-    resolution: {integrity: sha512-af12Pnd0ZGu2HfP8NayB0kk6eC/lrfbQE6HlR4jD+34wdJ1Vw9TF6TMn6ZvffT+WgqVsl0hRbmNvz2u/23VmwA==}
-    engines: {node: '>=20.9.0'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-linux-arm64@0.35.4':
     resolution: {integrity: sha512-De4jpEnAU8Hd5oT0j1G3uL4ZvTuipVMn7YC6vPaJhy6/7EwEae0SVAoBrUMYQbkLGDm85taVWwuPc1a44LTzCQ==}
     engines: {node: '>=20.9.0'}
     cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-linux-arm@0.35.2':
-    resolution: {integrity: sha512-SE4kzF2mepn6z+6E7L6lsV8FzuLL6IPQdyX8ZiwROAG/G8td+hP/m7FsFPwidtrF19gvajuC9l6TxAVcsA4S7A==}
-    engines: {node: '>=20.9.0'}
-    cpu: [arm]
     os: [linux]
     libc: [glibc]
 
@@ -978,24 +889,10 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-linux-ppc64@0.35.2':
-    resolution: {integrity: sha512-hYSBm7zcNtDCozCxQHYZJiu63b/bXsgRZuOxCIBZsStMM9Vap47iFHdbX4kCvQsblPB/k+clhELpdQJHQLSHvg==}
-    engines: {node: '>=20.9.0'}
-    cpu: [ppc64]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-linux-ppc64@0.35.4':
     resolution: {integrity: sha512-2oYZJeIl4kCcMGk4ouZVjnkCtFrpQFlNEtJ6GbxzhHQchwH0NH/qEb9ykmOl29dqwMq+JhFdZn+1ak2FKhI9fQ==}
     engines: {node: '>=20.9.0'}
     cpu: [ppc64]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-linux-riscv64@0.35.2':
-    resolution: {integrity: sha512-qQt0Kc13+Hoan/Awq/qMSQw3L+RI1NCRPgD5cUJ/1WSSmIoysLOc72jlRM3E0OHN9Yr313jgeQ2T+zW+F03QFA==}
-    engines: {node: '>=20.9.0'}
-    cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
@@ -1006,24 +903,10 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-linux-s390x@0.35.2':
-    resolution: {integrity: sha512-E4fLLfRPzDLlEeDaTzI98OFLcv++WL5ChLLMwPoVd0CIoZQqupBSNbOisPL5am9XsbQ9T84+iiMpUvbFtkunbA==}
-    engines: {node: '>=20.9.0'}
-    cpu: [s390x]
-    os: [linux]
-    libc: [glibc]
-
   '@img/sharp-linux-s390x@0.35.4':
     resolution: {integrity: sha512-RY0JFY8Fd6RonCBtHz+DvadaPkXDSI1AUn6yWL9TipqkZ1vY8w8evqdgyDFnkm4/K1ve1TvZiaePP5oSd4+WVQ==}
     engines: {node: '>=20.9.0'}
     cpu: [s390x]
-    os: [linux]
-    libc: [glibc]
-
-  '@img/sharp-linux-x64@0.35.2':
-    resolution: {integrity: sha512-gi0zFJJRLswfCZmHtJdikXPOc5u7qamSOS3NHedLqLd4W8Q0NqjdBr6TTRIgsfFjqfTsHFgdfvJ9LwqSgcHiAA==}
-    engines: {node: '>=20.9.0'}
-    cpu: [x64]
     os: [linux]
     libc: [glibc]
 
@@ -1034,24 +917,10 @@ packages:
     os: [linux]
     libc: [glibc]
 
-  '@img/sharp-linuxmusl-arm64@0.35.2':
-    resolution: {integrity: sha512-siWbOW1u6HFnFLrp0waKyW7VEf7jYvcDWdrXEFa8AkdAQgEvuu5Fz8/Y70w9EeqAdwDtfU012BhEHHaDqvQNzg==}
-    engines: {node: '>=20.9.0'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
   '@img/sharp-linuxmusl-arm64@0.35.4':
     resolution: {integrity: sha512-KB5jxpfWQTr0nc3xdHtWChdbifHrBGsd2SM62Eyxrl8afikm+f5qGBU75SJIZBT/S1MC8XyacdlXBMSWq6OURA==}
     engines: {node: '>=20.9.0'}
     cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
-  '@img/sharp-linuxmusl-x64@0.35.2':
-    resolution: {integrity: sha512-YBqMMcjDi4QGYiSn4vNOYBhmlC4z5AXqkOUUqI2e0AFA4urNv4ESgOgwNl3K+4etQhha0twXlzeF20bbULm9Yg==}
-    engines: {node: '>=20.9.0'}
-    cpu: [x64]
     os: [linux]
     libc: [musl]
 
@@ -1062,29 +931,14 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@img/sharp-wasm32@0.35.2':
-    resolution: {integrity: sha512-Mrv4JQNYVQ94xH+jzZ9r+gowleN8mv2FTgKT+PI6bx5C0G8TdNYndu161pg2i7uoBwxy2ImPMHrJOM2LZef7Bw==}
-    engines: {node: '>=20.9.0'}
-
   '@img/sharp-wasm32@0.35.4':
     resolution: {integrity: sha512-zQnl4Kwp7Q6NHsENtU2T/00Zi+w3AQNwz3+UaTyVBy2FpXrzXzGjndpK61onhZjRtRpQXxCTeqw19bVyXOh7jA==}
     engines: {node: '>=20.9.0'}
-
-  '@img/sharp-webcontainers-wasm32@0.35.2':
-    resolution: {integrity: sha512-QNV27pxs9wpApEiCfvHM1RDoP1w1+2KrUWWDPEhEwg+latvOrfuhWrHWZKwdSFwU6jh3myjw/yOCRsUIuOft3g==}
-    engines: {node: '>=20.9.0'}
-    cpu: [wasm32]
 
   '@img/sharp-webcontainers-wasm32@0.35.4':
     resolution: {integrity: sha512-ESfNkywmCfPNyaZjxooddJQiQ+l/nTpGEOGthxiLnIHXC/CmcBixnfwUleX9mCz9ovrUUvKMap/pm8RYbzfwaA==}
     engines: {node: '>=20.9.0'}
     cpu: [wasm32]
-
-  '@img/sharp-win32-arm64@0.35.2':
-    resolution: {integrity: sha512-BiVRYc/t6/Vl3e1hBx0hugG4oN9Pydf4fgMSpxTQJmwGUg/YoXTWHiFeRymHfCZzifxu4F4rpk/I67D0LQ20wQ==}
-    engines: {node: '>=20.9.0'}
-    cpu: [arm64]
-    os: [win32]
 
   '@img/sharp-win32-arm64@0.35.4':
     resolution: {integrity: sha512-iNdlBX9gLVvqe2I3uIJSIKTq6wckP/DYxZtcqxm09x5Gi24DnFBmPAWZmr60ZyYMG0xlzo6goG3670ar+RXvRw==}
@@ -1092,22 +946,10 @@ packages:
     cpu: [arm64]
     os: [win32]
 
-  '@img/sharp-win32-ia32@0.35.2':
-    resolution: {integrity: sha512-YYEhx9PImCC7T0tI8JDMi4DB9LwLCXCU5OWNYEXAxh5Q1ShKkyC6byxzoBJ3gEFDnH2lQckWuDe70G7mB2XJog==}
-    engines: {node: ^20.9.0}
-    cpu: [ia32]
-    os: [win32]
-
   '@img/sharp-win32-ia32@0.35.4':
     resolution: {integrity: sha512-kqRsbaa5CS6KHlpxnN7WhE6vAAugXyZButpRdvDWetlv6Qv4N9WTcrWzF7tXfB9T7MsoadqdI8hmwLq6UlLvtw==}
     engines: {node: ^20.9.0}
     cpu: [ia32]
-    os: [win32]
-
-  '@img/sharp-win32-x64@0.35.2':
-    resolution: {integrity: sha512-imoOyBcoM/iiUr4J6VPpCNjPnjvP/Gks95898yB8YqoGGYmHYbOyCuNv9FMhFgtaiHFGbHW8bxKqRV6VjtXThQ==}
-    engines: {node: '>=20.9.0'}
-    cpu: [x64]
     os: [win32]
 
   '@img/sharp-win32-x64@0.35.4':
@@ -1126,9 +968,6 @@ packages:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
 
-  '@jridgewell/sourcemap-codec@1.5.5':
-    resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
-
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
 
@@ -1141,12 +980,6 @@ packages:
   '@mermaid-js/parser@2.0.0':
     resolution: {integrity: sha512-K8BeapFUfrfxbRAUQAG5oBOCwo1+bNWzaVnPxTCutkfrTBn6T/j91FIhqxWJ32SUeQ9T3iy1zcmPZ5ROZEvDrg==}
     engines: {node: '>=22.12.0'}
-
-  '@napi-rs/wasm-runtime@1.1.6':
-    resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
-    peerDependencies:
-      '@emnapi/core': ^1.7.1
-      '@emnapi/runtime': ^1.7.1
 
   '@napi-rs/wasm-runtime@1.2.4':
     resolution: {integrity: sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==}
@@ -1566,9 +1399,6 @@ packages:
   '@types/geojson@7946.0.16':
     resolution: {integrity: sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==}
 
-  '@types/hast@3.0.4':
-    resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
-
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
 
@@ -1667,15 +1497,30 @@ packages:
 
   '@volar/language-server@2.4.28':
     resolution: {integrity: sha512-NqcLnE5gERKuS4PUFwlhMxf6vqYo7hXtbMFbViXcbVkbZ905AIVWhnSo0ZNBC2V127H1/2zP7RvVOVnyITFfBw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@volar/language-service@2.4.28':
     resolution: {integrity: sha512-Rh/wYCZJrI5vCwMk9xyw/Z+MsWxlJY1rmMZPsxUoJKfzIRjS/NF1NmnuEcrMbEVGja00aVpCsInJfixQTMdvLw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@volar/source-map@2.4.28':
     resolution: {integrity: sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ==}
 
   '@volar/typescript@2.4.28':
     resolution: {integrity: sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@vscode/emmet-helper@2.11.0':
     resolution: {integrity: sha512-QLxjQR3imPZPQltfbWRnHU6JecWTF1QSWhx3GAKQpslx7y3Dp6sIIXhKjiUJ/BR9FX8PVthjr9PD6pNwOJfAzw==}
@@ -2513,10 +2358,6 @@ packages:
     resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
 
-  js-yaml@4.1.1:
-    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
-    hasBin: true
-
   js-yaml@4.3.2:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
@@ -2948,9 +2789,6 @@ packages:
     resolution: {integrity: sha512-AxTM2wDGORHGEkPCt8yqxOTMgpfbEHqF51f/5fJCmwFC3C/zNcGT63SymH2ttOAaiIws2zVg4+izQCjrakcwHg==}
     engines: {node: '>=20'}
 
-  package-manager-detector@1.6.0:
-    resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
-
   package-manager-detector@1.8.0:
     resolution: {integrity: sha512-yQA4H19AmPEoMUeavPMDIe1higySl/gH/yaQrkT/s07Qp+7pp2hYz30N3z2l5BkjVkF9Ow6o0wjJamm2y7Sn0A==}
 
@@ -3252,32 +3090,14 @@ packages:
   satteri@0.9.3:
     resolution: {integrity: sha512-2XfBh89LCnBMFkNOeVKkBLelAZcIA17VLHsgJum1tJ2fXiPZDN/TDXv4ku46rFOQXYd41LJ0kiZh5gPqExcCsg==}
 
-  sax@1.6.0:
-    resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
-    engines: {node: '>=11.0.0'}
-
   sax@1.6.1:
     resolution: {integrity: sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q==}
     engines: {node: '>=11.0.0'}
-
-  semver@7.7.4:
-    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
-  semver@7.8.1:
-    resolution: {integrity: sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==}
-    engines: {node: '>=10'}
-    hasBin: true
 
   semver@7.8.5:
     resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
     hasBin: true
-
-  sharp@0.35.2:
-    resolution: {integrity: sha512-FVtFjtBCMiJS6yb5CX7Sop45WFMpeGw6oRKuJnXYgf/f1ms/D7LE/ZUSNxnW7rZ/dbslQWYkoqFHGPaDBtaK4w==}
-    engines: {node: '>=20.9.0'}
 
   sharp@0.35.4:
     resolution: {integrity: sha512-n++8XWcj+jCOr2IOl7h8LbKnGBDY4aPbmprMONBNFdn0ImXqpGVv5zliDs0V9HbmbCQLpbuo2ej9rAoOQTvMDA==}
@@ -3311,10 +3131,6 @@ packages:
   slugify@1.6.9:
     resolution: {integrity: sha512-vZ7rfeehZui7wQs438JXBckYLkIIdfHOXsaVEUMyS5fHo1483l1bMdo0EDSWYclY0yZKFOipDy4KHuKs6ssvdg==}
     engines: {node: '>=8.0.0'}
-
-  smol-toml@1.6.1:
-    resolution: {integrity: sha512-dWUG8F5sIIARXih1DTaQAX4SsiTXhInKf1buxdY9DIg4ZYPZK5nGM1VRIYmEbDbsHt7USo99xSLFu5Q1IqTmsg==}
-    engines: {node: '>= 18'}
 
   smol-toml@1.9.0:
     resolution: {integrity: sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ==}
@@ -3386,17 +3202,9 @@ packages:
     resolution: {integrity: sha512-nTv2raKFMzGG6JJp0lpNDsRPdfFE6UHlu2rVEjXo8vkx1ZS3LW2CVXqIaLu8xZlu+6tbFs9V58Qc/Jmk/Ii7wA==}
     engines: {node: ^16.14.0 || >= 17.3.0}
 
-  tinyexec@1.2.2:
-    resolution: {integrity: sha512-M/Q0B2cp4K7kynaT/vnED1j8TlLY+Pp7C6Wl2bl/7u/F0mUVwdyOpwomQb8JpYLitHUssAJRmLZdMCGsrx7i+g==}
-    engines: {node: '>=18'}
-
   tinyexec@1.3.1:
     resolution: {integrity: sha512-GCvB3aoys96IuDFBMcTB46JOR6mdMtAToqwiW8JlWhsoh1mhHi/xn9ss/Dg7N555GiJyEt2qzoG/NHCwM6h1EA==}
     engines: {node: '>=18'}
-
-  tinyglobby@0.2.16:
-    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
-    engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -3666,16 +3474,22 @@ packages:
     resolution: {integrity: sha512-IdD13Z9N2Bu8EM6CM0fDV1E69olEYGHDU25X51YXmq8Y0CmJ2LNj6gOiBJgpS5JGUqFzECVhMNBW7R0sPdRTMQ==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-typescript@0.0.70:
     resolution: {integrity: sha512-l46Bx4cokkUedTd74ojO5H/zqHZJ8SUuyZ0IB8JN4jfRqUM3bQFBHoOwlZCyZmOeO0A3RQNkMnFclxO4c++gsg==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
+      typescript: '*'
     peerDependenciesMeta:
       '@volar/language-service':
+        optional: true
+      typescript:
         optional: true
 
   volar-service-yaml@0.0.70:
@@ -3783,9 +3597,6 @@ packages:
   yoga-layout@3.2.1:
     resolution: {integrity: sha512-0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==}
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
-
   zod@4.6.5:
     resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
@@ -3874,44 +3685,44 @@ snapshots:
 
   '@astrojs/internal-helpers@0.10.0':
     dependencies:
-      '@types/hast': 3.0.4
-      '@types/mdast': 4.0.4
-      js-yaml: 4.1.1
-      picomatch: 4.0.4
-      retext-smartypants: 6.2.0
-      shiki: 4.1.0
-      smol-toml: 1.6.1
-      unified: 11.0.5
-
-  '@astrojs/internal-helpers@0.11.0':
-    dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       js-yaml: 4.3.2
       picomatch: 4.0.4
       retext-smartypants: 6.2.0
       shiki: 4.1.0
-      smol-toml: 1.6.1
+      smol-toml: 1.9.0
+      unified: 11.0.5
+
+  '@astrojs/internal-helpers@0.11.0':
+    dependencies:
+      '@types/hast': 3.0.5
+      '@types/mdast': 4.0.4
+      js-yaml: 4.3.2
+      picomatch: 4.0.4
+      retext-smartypants: 6.2.0
+      shiki: 4.1.0
+      smol-toml: 1.9.0
       unified: 11.0.5
 
   '@astrojs/language-server@2.16.7(prettier-plugin-astro@0.14.1)(prettier@3.9.3)(typescript@6.0.3)':
     dependencies:
       '@astrojs/compiler': 2.13.1
       '@astrojs/yaml2ts': 0.2.3
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
       '@volar/kit': 2.4.28(typescript@6.0.3)
       '@volar/language-core': 2.4.28
-      '@volar/language-server': 2.4.28
-      '@volar/language-service': 2.4.28
+      '@volar/language-server': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
       muggle-string: 0.4.1
-      tinyglobby: 0.2.16
-      volar-service-css: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-emmet: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-html: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-prettier: 0.0.70(@volar/language-service@2.4.28)(prettier@3.9.3)
-      volar-service-typescript: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-typescript-twoslash-queries: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-yaml: 0.0.70(@volar/language-service@2.4.28)
+      tinyglobby: 0.2.17
+      volar-service-css: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))
+      volar-service-emmet: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))
+      volar-service-html: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))
+      volar-service-prettier: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(prettier@3.9.3)
+      volar-service-typescript: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3)
+      volar-service-typescript-twoslash-queries: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3)
+      volar-service-yaml: 0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))
       vscode-html-languageservice: 5.6.2
       vscode-uri: 3.1.0
     optionalDependencies:
@@ -3987,20 +3798,20 @@ snapshots:
     dependencies:
       fast-xml-parser: 5.10.1
       piccolore: 0.1.3
-      zod: 4.4.3
+      zod: 4.6.5
 
   '@astrojs/sitemap@3.7.3':
     dependencies:
       sitemap: 9.0.1
       stream-replace-string: 2.0.0
-      zod: 4.4.3
+      zod: 4.6.5
 
   '@astrojs/telemetry@3.3.3':
     dependencies:
       ci-info: 4.4.0
       dset: 3.1.4
       is-docker: 4.0.0
-      package-manager-detector: 1.6.0
+      package-manager-detector: 1.8.0
 
   '@astrojs/yaml2ts@0.2.3':
     dependencies:
@@ -4294,19 +4105,9 @@ snapshots:
 
   '@img/colour@1.1.0': {}
 
-  '@img/sharp-darwin-arm64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-darwin-arm64': 1.3.1
-    optional: true
-
   '@img/sharp-darwin-arm64@0.35.4':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.3.3
-    optional: true
-
-  '@img/sharp-darwin-x64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-darwin-x64': 1.3.1
     optional: true
 
   '@img/sharp-darwin-x64@0.35.4':
@@ -4314,79 +4115,39 @@ snapshots:
       '@img/sharp-libvips-darwin-x64': 1.3.3
     optional: true
 
-  '@img/sharp-freebsd-wasm32@0.35.2':
-    dependencies:
-      '@img/sharp-wasm32': 0.35.2
-    optional: true
-
   '@img/sharp-freebsd-wasm32@0.35.4':
     dependencies:
       '@img/sharp-wasm32': 0.35.4
     optional: true
 
-  '@img/sharp-libvips-darwin-arm64@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-darwin-arm64@1.3.3':
-    optional: true
-
-  '@img/sharp-libvips-darwin-x64@1.3.1':
     optional: true
 
   '@img/sharp-libvips-darwin-x64@1.3.3':
     optional: true
 
-  '@img/sharp-libvips-linux-arm64@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-linux-arm64@1.3.3':
-    optional: true
-
-  '@img/sharp-libvips-linux-arm@1.3.1':
     optional: true
 
   '@img/sharp-libvips-linux-arm@1.3.3':
     optional: true
 
-  '@img/sharp-libvips-linux-ppc64@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-linux-ppc64@1.3.3':
-    optional: true
-
-  '@img/sharp-libvips-linux-riscv64@1.3.1':
     optional: true
 
   '@img/sharp-libvips-linux-riscv64@1.3.3':
     optional: true
 
-  '@img/sharp-libvips-linux-s390x@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-linux-s390x@1.3.3':
-    optional: true
-
-  '@img/sharp-libvips-linux-x64@1.3.1':
     optional: true
 
   '@img/sharp-libvips-linux-x64@1.3.3':
     optional: true
 
-  '@img/sharp-libvips-linuxmusl-arm64@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-linuxmusl-arm64@1.3.3':
     optional: true
 
-  '@img/sharp-libvips-linuxmusl-x64@1.3.1':
-    optional: true
-
   '@img/sharp-libvips-linuxmusl-x64@1.3.3':
-    optional: true
-
-  '@img/sharp-linux-arm64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-arm64': 1.3.1
     optional: true
 
   '@img/sharp-linux-arm64@0.35.4':
@@ -4394,19 +4155,9 @@ snapshots:
       '@img/sharp-libvips-linux-arm64': 1.3.3
     optional: true
 
-  '@img/sharp-linux-arm@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-arm': 1.3.1
-    optional: true
-
   '@img/sharp-linux-arm@0.35.4':
     optionalDependencies:
       '@img/sharp-libvips-linux-arm': 1.3.3
-    optional: true
-
-  '@img/sharp-linux-ppc64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-ppc64': 1.3.1
     optional: true
 
   '@img/sharp-linux-ppc64@0.35.4':
@@ -4414,19 +4165,9 @@ snapshots:
       '@img/sharp-libvips-linux-ppc64': 1.3.3
     optional: true
 
-  '@img/sharp-linux-riscv64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-riscv64': 1.3.1
-    optional: true
-
   '@img/sharp-linux-riscv64@0.35.4':
     optionalDependencies:
       '@img/sharp-libvips-linux-riscv64': 1.3.3
-    optional: true
-
-  '@img/sharp-linux-s390x@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-s390x': 1.3.1
     optional: true
 
   '@img/sharp-linux-s390x@0.35.4':
@@ -4434,19 +4175,9 @@ snapshots:
       '@img/sharp-libvips-linux-s390x': 1.3.3
     optional: true
 
-  '@img/sharp-linux-x64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linux-x64': 1.3.1
-    optional: true
-
   '@img/sharp-linux-x64@0.35.4':
     optionalDependencies:
       '@img/sharp-libvips-linux-x64': 1.3.3
-    optional: true
-
-  '@img/sharp-linuxmusl-arm64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-arm64': 1.3.1
     optional: true
 
   '@img/sharp-linuxmusl-arm64@0.35.4':
@@ -4454,19 +4185,9 @@ snapshots:
       '@img/sharp-libvips-linuxmusl-arm64': 1.3.3
     optional: true
 
-  '@img/sharp-linuxmusl-x64@0.35.2':
-    optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-x64': 1.3.1
-    optional: true
-
   '@img/sharp-linuxmusl-x64@0.35.4':
     optionalDependencies:
       '@img/sharp-libvips-linuxmusl-x64': 1.3.3
-    optional: true
-
-  '@img/sharp-wasm32@0.35.2':
-    dependencies:
-      '@emnapi/runtime': 1.11.1
     optional: true
 
   '@img/sharp-wasm32@0.35.4':
@@ -4474,29 +4195,15 @@ snapshots:
       '@emnapi/runtime': 1.11.3
     optional: true
 
-  '@img/sharp-webcontainers-wasm32@0.35.2':
-    dependencies:
-      '@img/sharp-wasm32': 0.35.2
-    optional: true
-
   '@img/sharp-webcontainers-wasm32@0.35.4':
     dependencies:
       '@img/sharp-wasm32': 0.35.4
     optional: true
 
-  '@img/sharp-win32-arm64@0.35.2':
-    optional: true
-
   '@img/sharp-win32-arm64@0.35.4':
     optional: true
 
-  '@img/sharp-win32-ia32@0.35.2':
-    optional: true
-
   '@img/sharp-win32-ia32@0.35.4':
-    optional: true
-
-  '@img/sharp-win32-x64@0.35.2':
     optional: true
 
   '@img/sharp-win32-x64@0.35.4':
@@ -4504,7 +4211,7 @@ snapshots:
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
       '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/remapping@2.3.5':
@@ -4514,20 +4221,18 @@ snapshots:
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
-  '@jridgewell/sourcemap-codec@1.5.5': {}
-
   '@jridgewell/sourcemap-codec@1.6.0': {}
 
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   '@mdx-js/mdx@3.1.1':
     dependencies:
       '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdx': 2.0.13
       acorn: 8.16.0
       collapse-white-space: 2.1.0
@@ -4556,13 +4261,6 @@ snapshots:
   '@mermaid-js/parser@2.0.0':
     dependencies:
       '@chevrotain/types': 11.1.2
-
-  '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
-    dependencies:
-      '@emnapi/core': 1.11.1
-      '@emnapi/runtime': 1.11.1
-      '@tybys/wasm-util': 0.10.3
-    optional: true
 
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
@@ -4649,7 +4347,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.1.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.1.3':
@@ -4665,7 +4363,7 @@ snapshots:
       '@shikijs/primitive': 4.1.0
       '@shikijs/types': 4.1.0
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
 
   '@shikijs/core@4.3.0':
@@ -4673,7 +4371,7 @@ snapshots:
       '@shikijs/primitive': 4.3.0
       '@shikijs/types': 4.3.0
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
 
   '@shikijs/engine-javascript@4.1.0':
@@ -4695,13 +4393,13 @@ snapshots:
     dependencies:
       '@shikijs/types': 4.1.0
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   '@shikijs/primitive@4.3.0':
     dependencies:
       '@shikijs/types': 4.3.0
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   '@shikijs/themes@4.1.0':
     dependencies:
@@ -4715,12 +4413,12 @@ snapshots:
   '@shikijs/types@4.1.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   '@shikijs/types@4.3.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
@@ -4938,10 +4636,6 @@ snapshots:
 
   '@types/geojson@7946.0.16': {}
 
-  '@types/hast@3.0.4':
-    dependencies:
-      '@types/unist': 3.0.3
-
   '@types/hast@3.0.5':
     dependencies:
       '@types/unist': 3.0.3
@@ -5025,7 +4719,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.62.0
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.8.1
+      semver: 7.8.5
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -5046,8 +4740,8 @@ snapshots:
 
   '@volar/kit@2.4.28(typescript@6.0.3)':
     dependencies:
-      '@volar/language-service': 2.4.28
-      '@volar/typescript': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/typescript': 2.4.28(typescript@6.0.3)
       typesafe-path: 0.2.2
       typescript: 6.0.3
       vscode-languageserver-textdocument: 1.0.12
@@ -5057,32 +4751,38 @@ snapshots:
     dependencies:
       '@volar/source-map': 2.4.28
 
-  '@volar/language-server@2.4.28':
+  '@volar/language-server@2.4.28(typescript@6.0.3)':
     dependencies:
       '@volar/language-core': 2.4.28
-      '@volar/language-service': 2.4.28
-      '@volar/typescript': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/typescript': 2.4.28(typescript@6.0.3)
       path-browserify: 1.0.1
       request-light: 0.7.0
       vscode-languageserver: 9.0.1
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
+    optionalDependencies:
+      typescript: 6.0.3
 
-  '@volar/language-service@2.4.28':
+  '@volar/language-service@2.4.28(typescript@6.0.3)':
     dependencies:
       '@volar/language-core': 2.4.28
       vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
+    optionalDependencies:
+      typescript: 6.0.3
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.28':
+  '@volar/typescript@2.4.28(typescript@6.0.3)':
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
       vscode-uri: 3.1.0
+    optionalDependencies:
+      typescript: 6.0.3
 
   '@vscode/emmet-helper@2.11.0':
     dependencies:
@@ -5156,7 +4856,7 @@ snapshots:
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
-      semver: 7.8.1
+      semver: 7.8.5
       tinyglobby: 0.2.17
     transitivePeerDependencies:
       - supports-color
@@ -5198,14 +4898,14 @@ snapshots:
       obug: 3.0.0
       p-limit: 7.3.0
       p-queue: 9.3.0
-      package-manager-detector: 1.6.0
+      package-manager-detector: 1.8.0
       piccolore: 0.1.3
       picomatch: 4.0.4
       shiki: 4.1.0
       smol-toml: 1.9.0
       svgo: 4.1.0
       tinyclip: 1.0.3
-      tinyexec: 1.2.2
+      tinyexec: 1.3.1
       tinyglobby: 0.2.17
       ultrahtml: 1.6.0
       unifont: 0.7.5
@@ -5713,7 +5413,7 @@ snapshots:
   eslint-plugin-astro@2.1.1(@typescript-eslint/parser@8.62.0(eslint@10.6.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.6.0(jiti@2.7.0)):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.6.0(jiti@2.7.0))
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
       '@typescript-eslint/types': 8.62.0
       astro-eslint-parser: 2.1.0
       eslint: 10.6.0(jiti@2.7.0)
@@ -5944,7 +5644,7 @@ snapshots:
 
   hast-util-from-html@2.0.3:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       devlop: 1.1.0
       hast-util-from-parse5: 8.0.3
       parse5: 7.3.0
@@ -5953,7 +5653,7 @@ snapshots:
 
   hast-util-from-parse5@8.0.3:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       devlop: 1.1.0
       hastscript: 9.0.1
@@ -5964,15 +5664,15 @@ snapshots:
 
   hast-util-is-element@3.0.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   hast-util-parse-selector@4.0.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   hast-util-raw@9.1.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       '@ungap/structured-clone': 1.3.1
       hast-util-from-parse5: 8.0.3
@@ -5990,7 +5690,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       comma-separated-tokens: 2.0.3
       devlop: 1.1.0
       estree-util-attach-comments: 3.0.0
@@ -6009,7 +5709,7 @@ snapshots:
 
   hast-util-to-html@9.0.5:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       ccount: 2.0.1
       comma-separated-tokens: 2.0.3
@@ -6024,7 +5724,7 @@ snapshots:
   hast-util-to-jsx-runtime@2.3.6:
     dependencies:
       '@types/estree': 1.0.9
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       comma-separated-tokens: 2.0.3
       devlop: 1.1.0
@@ -6043,7 +5743,7 @@ snapshots:
 
   hast-util-to-parse5@8.0.1:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       comma-separated-tokens: 2.0.3
       devlop: 1.1.0
       property-information: 7.1.0
@@ -6053,18 +5753,18 @@ snapshots:
 
   hast-util-to-text@4.0.2:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/unist': 3.0.3
       hast-util-is-element: 3.0.0
       unist-util-find-after: 5.0.0
 
   hast-util-whitespace@3.0.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   hastscript@9.0.1:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       comma-separated-tokens: 2.0.3
       hast-util-parse-selector: 4.0.0
       property-information: 7.1.0
@@ -6124,10 +5824,6 @@ snapshots:
   isexe@2.0.0: {}
 
   jiti@2.7.0: {}
-
-  js-yaml@4.1.1:
-    dependencies:
-      argparse: 2.0.1
 
   js-yaml@4.3.2:
     dependencies:
@@ -6240,7 +5936,7 @@ snapshots:
 
   magic-string@0.30.21:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   magic-string@1.4.1:
     dependencies:
@@ -6364,7 +6060,7 @@ snapshots:
   mdast-util-mdx-expression@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
@@ -6375,7 +6071,7 @@ snapshots:
   mdast-util-mdx-jsx@3.2.0:
     dependencies:
       '@types/estree-jsx': 1.0.5
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
       ccount: 2.0.1
@@ -6402,7 +6098,7 @@ snapshots:
   mdast-util-mdxjs-esm@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       mdast-util-from-markdown: 2.0.3
@@ -6417,7 +6113,7 @@ snapshots:
 
   mdast-util-to-hast@13.2.1:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       '@ungap/structured-clone': 1.3.1
       devlop: 1.1.0
@@ -6835,8 +6531,6 @@ snapshots:
 
   p-timeout@7.0.1: {}
 
-  package-manager-detector@1.6.0: {}
-
   package-manager-detector@1.8.0: {}
 
   pagefind@1.5.2:
@@ -6997,7 +6691,7 @@ snapshots:
 
   rehype-callouts@2.2.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-from-html: 2.0.3
       hast-util-is-element: 3.0.0
       hastscript: 9.0.1
@@ -7015,21 +6709,21 @@ snapshots:
 
   rehype-raw@7.0.0:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-raw: 9.1.0
       vfile: 6.0.3
 
   rehype-recma@1.0.0:
     dependencies:
       '@types/estree': 1.0.9
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-to-estree: 3.1.3
     transitivePeerDependencies:
       - supports-color
 
   rehype-stringify@10.0.1:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
       unified: 11.0.5
 
@@ -7076,7 +6770,7 @@ snapshots:
 
   remark-rehype@11.1.2:
     dependencies:
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       mdast-util-to-hast: 13.2.1
       unified: 11.0.5
@@ -7224,47 +6918,9 @@ snapshots:
       '@bruits/satteri-win32-x64-msvc': 0.9.3
     optional: true
 
-  sax@1.6.0: {}
-
   sax@1.6.1: {}
 
-  semver@7.7.4: {}
-
-  semver@7.8.1: {}
-
   semver@7.8.5: {}
-
-  sharp@0.35.2:
-    dependencies:
-      '@img/colour': 1.1.0
-      detect-libc: 2.1.2
-      semver: 7.8.5
-    optionalDependencies:
-      '@img/sharp-darwin-arm64': 0.35.2
-      '@img/sharp-darwin-x64': 0.35.2
-      '@img/sharp-freebsd-wasm32': 0.35.2
-      '@img/sharp-libvips-darwin-arm64': 1.3.1
-      '@img/sharp-libvips-darwin-x64': 1.3.1
-      '@img/sharp-libvips-linux-arm': 1.3.1
-      '@img/sharp-libvips-linux-arm64': 1.3.1
-      '@img/sharp-libvips-linux-ppc64': 1.3.1
-      '@img/sharp-libvips-linux-riscv64': 1.3.1
-      '@img/sharp-libvips-linux-s390x': 1.3.1
-      '@img/sharp-libvips-linux-x64': 1.3.1
-      '@img/sharp-libvips-linuxmusl-arm64': 1.3.1
-      '@img/sharp-libvips-linuxmusl-x64': 1.3.1
-      '@img/sharp-linux-arm': 0.35.2
-      '@img/sharp-linux-arm64': 0.35.2
-      '@img/sharp-linux-ppc64': 0.35.2
-      '@img/sharp-linux-riscv64': 0.35.2
-      '@img/sharp-linux-s390x': 0.35.2
-      '@img/sharp-linux-x64': 0.35.2
-      '@img/sharp-linuxmusl-arm64': 0.35.2
-      '@img/sharp-linuxmusl-x64': 0.35.2
-      '@img/sharp-webcontainers-wasm32': 0.35.2
-      '@img/sharp-win32-arm64': 0.35.2
-      '@img/sharp-win32-ia32': 0.35.2
-      '@img/sharp-win32-x64': 0.35.2
 
   sharp@0.35.4(@types/node@24.12.2):
     dependencies:
@@ -7298,7 +6954,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
       '@types/node': 24.12.2
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
@@ -7315,7 +6970,7 @@ snapshots:
       '@shikijs/themes': 4.1.0
       '@shikijs/types': 4.1.0
       '@shikijs/vscode-textmate': 10.0.2
-      '@types/hast': 3.0.4
+      '@types/hast': 3.0.5
 
   sisteransi@1.0.5: {}
 
@@ -7324,11 +6979,9 @@ snapshots:
       '@types/node': 24.12.2
       '@types/sax': 1.2.7
       arg: 5.0.2
-      sax: 1.6.0
+      sax: 1.6.1
 
   slugify@1.6.9: {}
-
-  smol-toml@1.6.1: {}
 
   smol-toml@1.9.0: {}
 
@@ -7397,14 +7050,7 @@ snapshots:
 
   tinyclip@1.0.3: {}
 
-  tinyexec@1.2.2: {}
-
   tinyexec@1.3.1: {}
-
-  tinyglobby@0.2.16:
-    dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
 
   tinyglobby@0.2.17:
     dependencies:
@@ -7432,7 +7078,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.6:
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.5
 
   typescript@6.0.3: {}
 
@@ -7567,61 +7213,63 @@ snapshots:
     optionalDependencies:
       vite: 8.1.0(@types/node@24.12.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.8.3)
 
-  volar-service-css@0.0.70(@volar/language-service@2.4.28):
+  volar-service-css@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3)):
     dependencies:
       vscode-css-languageservice: 6.3.10
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
 
-  volar-service-emmet@0.0.70(@volar/language-service@2.4.28):
+  volar-service-emmet@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3)):
     dependencies:
       '@emmetio/css-parser': 0.4.1
       '@emmetio/html-matcher': 1.3.0
       '@vscode/emmet-helper': 2.11.0
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
 
-  volar-service-html@0.0.70(@volar/language-service@2.4.28):
+  volar-service-html@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3)):
     dependencies:
       vscode-html-languageservice: 5.6.2
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
 
-  volar-service-prettier@0.0.70(@volar/language-service@2.4.28)(prettier@3.9.3):
+  volar-service-prettier@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(prettier@3.9.3):
     dependencies:
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
       prettier: 3.9.3
 
-  volar-service-typescript-twoslash-queries@0.0.70(@volar/language-service@2.4.28):
+  volar-service-typescript-twoslash-queries@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      typescript: 6.0.3
 
-  volar-service-typescript@0.0.70(@volar/language-service@2.4.28):
+  volar-service-typescript@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.7.4
+      semver: 7.8.5
       typescript-auto-import-cache: 0.3.6
       vscode-languageserver-textdocument: 1.0.12
       vscode-nls: 5.2.0
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      typescript: 6.0.3
 
-  volar-service-yaml@0.0.70(@volar/language-service@2.4.28):
+  volar-service-yaml@0.0.70(@volar/language-service@2.4.28(typescript@6.0.3)):
     dependencies:
       vscode-uri: 3.1.0
       yaml-language-server: 1.20.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28
+      '@volar/language-service': 2.4.28(typescript@6.0.3)
 
   vscode-css-languageservice@6.3.10:
     dependencies:
@@ -7721,8 +7369,6 @@ snapshots:
   yocto-queue@1.2.2: {}
 
   yoga-layout@3.2.1: {}
-
-  zod@4.4.3: {}
 
   zod@4.6.5: {}
 
