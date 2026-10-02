@@ -2,6 +2,7 @@
   "name": "tmp-paper-scaffold",
   "type": "module",
   "version": "6.1.0",
+  "packageManager": "pnpm@12.6.0",
   "engines": {
     "node": ">=22.12.0"
   },
