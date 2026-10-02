@@ -60,9 +60,11 @@ type Props = {
 
 const { post, prevPost, nextPost } = Astro.props;
 const locale = Astro.currentLocale ?? config.site.lang;
+const aboutUrl = `${import.meta.env.BASE_URL.replace(/\/$/, "")}/about/`;
 
 const {
   title,
+  author,
   description,
   ogImage: initOgImage,
   canonicalURL,
@@ -103,6 +105,7 @@ const ogImage = ogImageUrl
   canonicalURL={canonicalURL}
   pubDatetime={pubDatetime}
   modDatetime={modDatetime}
+  author={author}
 >
   <Header />
 
@@ -129,6 +132,8 @@ const ogImage = ogImageUrl
           { hidden: !config.features.editPost?.enabled || hideEditPost },
         ]}
       >
+
+      <p class="text-muted-foreground text-sm">Written by {author}</p>
         |
       </span>
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
@@ -144,6 +149,16 @@ const ogImage = ogImageUrl
     >
       <Content />
     </article>
+
+    <aside
+      data-pagefind-ignore
+      class="border-accent text-muted-foreground mt-8 border-s-4 ps-4 text-sm"
+    >
+      <strong>Disclaimer:</strong> Shared as personal notes based on my own
+      setup, not as advice. Details may be outdated or contain errors, so
+      please verify before applying. You are responsible for your own choices
+      and how you use this content. Written with AI assistance (see <a href={aboutUrl} class="underline">About</a>).
+    </aside>
 
     <hr class="my-8 border-dashed" />
 

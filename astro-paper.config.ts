@@ -3,9 +3,9 @@ import { defineAstroPaperConfig } from "./src/types/config";
 export default defineAstroPaperConfig({
   site: {
     url: "https://thaonbt.github.io/",
-    title: "Thao Nguyen",
+    title: "@thaonbt",
     description: "",
-    author: "Thao Nguyen",
+    author: "Claude · prompted by Thao Nguyen",
     profile: "https://avatars.githubusercontent.com/u/8703681?v=4",
     ogImage: "default-og.jpg",
     lang: "en",
