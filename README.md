@@ -65,6 +65,16 @@ Search only works after `pnpm build`. In dev mode the search index may be empty.
 * Output directory: `dist`
 * Remove `base` and set `site.url` to the final URL
 
+## Verify before pushing
+
+Run this locally to catch dependency and build errors before CI does:
+
+```bash
+pnpm install --frozen-lockfile && pnpm build
+```
+
+If it fails with an outdated lockfile error, run `pnpm install` and commit both `package.json` and `pnpm-lock.yaml` together.
+
 ## Common pitfalls
 
 * **404 on assets or links after deploy:**`base` is missing or a link is hardcoded without the prefix. Test with `pnpm build && pnpm preview`.
