@@ -1,6 +1,7 @@
 ---
 title: Thao Nguyen
 description: Senior QA engineer exploring the intersection of quality, data and finance.
+permalink: /about/
 ---
 
 # Hi, I'm Thao 👋
